@@ -54,7 +54,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # Setup Default Catkin Base Project
     # We need to run this as the vagrant user, so that the workspace gets installed correctly
-    config.vm.provision "shell", privileged: false, inline: "su -c /vagrant/provision/ros-catkin-workspace.sh vagrant"
+    config.vm.provision "shell", privileged: true, inline: "su -c /vagrant/provision/ros-catkin-workspace.sh vagrant"
 
     config.vm.provision :reload
 

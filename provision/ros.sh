@@ -14,9 +14,9 @@ apt-get update
 #Install ROS with full Desktop features: ROS, rqt, rviz, robot-generic libraries, 2D/3D simulators, navigation and 2D/3D perception
 apt-get -y install ros-kinetic-desktop-full
 
-#initialize RosDep
-rosdep init
-rosdep update
+# #initialize RosDep
+# rosdep init
+# rosdep update
 
 #Install RosInstall
 apt-get -y install python-rosinstall
